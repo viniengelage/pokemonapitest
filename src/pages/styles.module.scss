@@ -1,0 +1,41 @@
+@import '../global/styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.searchInput {
+  width: 80%;
+  align-self: center;
+}
+
+.mobileCarousel {
+  width: 100%;
+}
+
+.desktopGrid {
+  display: none;
+  width: 60%;
+  align-items: center;
+  justify-content: space-around;
+  align-self: center;
+  flex-wrap: wrap;
+
+  margin-top: 32px;
+}
+
+@media only screen and (min-width: 600px) {
+  .desktopGrid {
+    display: flex;
+  }
+
+  .mobileCarousel {
+    display: none;
+  }
+
+  .searchInput {
+    width: 50%;
+  }
+}

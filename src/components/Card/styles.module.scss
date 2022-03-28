@@ -1,0 +1,98 @@
+@import '../../global/styles/variables';
+
+.block{
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  padding-top: 32px;
+  margin-bottom: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: $background;
+  box-shadow: -2px 5px 4px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background-color: #d9e4f5;
+  background-image: linear-gradient(315deg, $background 0%, $secundary 80%);
+  width: 300px;
+  cursor: pointer;
+}
+
+.iconCircle {
+  width:64px;
+  height: 64px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:$primary;
+
+  position: absolute;
+  z-index: 10;
+  margin: 32px;
+  top: -32px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.image {
+  width: 136px;
+  height: 190px;
+
+  margin-top: 48px;
+  margin-bottom: -32px;
+  z-index: 10;
+
+  img {
+    width: 100%;
+  }
+}
+
+.information {
+  background: $background;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  padding: 32px 64px;
+  box-shadow: 0px -2px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.2rem;
+  color: $primary;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.subtitle {
+  font-size: 90%;
+  color: $text;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 8px;
+
+  background: $primary;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+.description {
+  font-size: 90%;
+  color: $primary;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 8px;
+}

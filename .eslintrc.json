@@ -1,0 +1,82 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
+        "airbnb"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "globals": {
+      "JSX": true
+    },
+    "plugins": [
+        "react",
+        "react-hooks",
+        "@typescript-eslint",
+        "prettier"
+    ],
+    "rules": {
+      "no-unused-vars": "off",
+      "no-undef":"off",
+      "@typescript-eslint/no-unused-vars": ["off"],
+      "import/no-extraneous-dependencies":"off",
+      "no-param-reassign":"off",
+      "arrow-body-style":"off",
+      "default-param-last":"off",
+      "react/jsx-one-expression-per-line":"off",
+      "operator-linebreak":"off",
+      "react/require-default-props":"off",
+      "jsx-a11y/click-events-have-key-events":"off",
+      "jsx-a11y/no-noninteractive-element-interactions":"off",
+      "object-curly-newline":"off",
+      "react/no-array-index-key":"off",
+      "arrow-parens":"off",
+      "no-explicit-any":"off",
+      "@typescript-eslint/no-explicit-any":"off",
+      "react/jsx-no-useless-fragment":"off",
+      "no-unsafe-optional-chaining":"off",
+      "import/prefer-default-export":"off",
+      "react/jsx-props-no-spreading":"off",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "react/jsx-filename-extension": [
+        1,
+        {
+        "extensions": [
+          ".tsx"
+        ]
+        }
+      ],
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": [
+        "error"
+      ],
+      "react/react-in-jsx-scope": "off",
+      "prettier/prettier": "error",
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "ts": "never",
+          "tsx": "never"
+        }
+     ]
+    },
+    "settings": {
+      "import/resolver": {
+        "typescript": {}
+      }
+    }
+}

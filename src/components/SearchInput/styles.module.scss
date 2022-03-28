@@ -1,0 +1,59 @@
+@import '../../global/styles/variables';
+
+.block {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  height: 100%;
+
+  background: $inputBackground;
+  border-radius: 3px;
+
+  align-items: center;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  margin: 0 16px;
+  color:$primary;
+}
+
+.input {
+  display: flex;
+  flex:1;
+
+  background: none;
+  outline: none;
+
+  margin-right: 16px;
+  font-size: 16px;
+  color:$primary;
+}
+
+.button {
+  background: $inputBackground;
+  height: 100%;
+  margin-left: 8px;
+  border-radius: 3px;
+  padding: 0 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 90%;
+  color: $primary;
+  cursor: pointer;
+}

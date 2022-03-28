@@ -1,0 +1,56 @@
+@import '../../global/styles/variables';
+
+
+.container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.carousel {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 32px;
+  width: 100%;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+
+.carouselItem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.slideButton {
+  background: transparent;
+  outline: none;
+
+  z-index: 10;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
+    color: $primary;
+  }
+
+  &:first-child {
+    margin-left: 16px;
+  }
+
+  &:last-child{
+    margin-right: 16px;
+  }
+}
+

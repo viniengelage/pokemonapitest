@@ -1,0 +1,149 @@
+@import "../../global/styles/variables";
+
+$darkenTertiary: darken($secundary, 5);
+$lightenTertiary: lighten($secundary, 15);
+
+$darkenPrimary: darken($primary, 5);
+$lightenPrimary: lighten($primary, 5);
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.imageBackground {
+  background: $secundary;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 275px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 32px;
+}
+
+.cardImage {
+  width: 200px;
+  height: 275px;
+
+  margin-bottom: -64px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.cardSection {
+  width: 100%;
+  padding: 0 32px 32px;
+  margin-top: 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 600px;
+}
+
+.card {
+  background-image: linear-gradient(to right, $darkenTertiary, $lightenTertiary);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  border-radius: 6px;
+
+  margin-top: 16px;
+
+  padding: 8px 16px;
+
+  color:$primary;
+  width: 100%;
+  box-shadow: $cardShadow;
+}
+
+.name {
+  font-size: 1.6rem;
+}
+
+.cardTitle {
+  width: 100%;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.descriptionSection {
+  display: flex;
+  width: 100%;
+}
+
+.descriptionText {
+  font-weight: 500;
+  text-align: left;
+  margin-left: 16px;
+}
+
+
+.groupCard {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  section {
+
+    &:first-child {
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+
+    &:last-child {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+  }
+}
+
+.attackCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: linear-gradient(to right, $darkenPrimary, $lightenPrimary);
+  border-radius: 6px;
+
+  color: $text;
+  padding: 8px 16px;
+  width: 100%;
+  max-width: 600px;
+
+  margin-top: 16px;
+  box-shadow: $cardShadow;
+
+  strong {
+    text-align: center;
+  }
+}
+
+.detailSection {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+
+.detailButton {
+  padding: 6px;
+  background: transparent;
+  border-radius: 3px;
+  color: $text;
+  border: 2px solid $background;
+
+  font-weight: 500;
+  cursor: pointer;
+}

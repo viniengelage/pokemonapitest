@@ -1,0 +1,46 @@
+@import '../../global/styles/variables';
+
+.container {
+  height: 70px;
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+
+  background: $background;
+  box-shadow: 0px 8px 11px -4px rgba(0, 0, 0, 0.05);
+}
+
+.backIcon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background: transparent;
+
+  left: 16px;
+
+  svg {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin-left: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: $primary;
+}
+
+

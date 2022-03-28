@@ -1,0 +1,56 @@
+@import '../../global/styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.informationSection {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.description {
+  width: 100%;
+  font-weight: 600;
+  text-align: right;
+}
+
+.cost {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.costSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textSection {
+  padding: 3px;
+  margin-top: 16px;
+}
+
+.textTitle {
+  font-size: 100%;
+}
+
+.text {
+  font-size: 90%;
+}
+
+.button {
+  margin-top: 16px;
+  border-radius: 3px;
+  background: $error;
+  height: 40px;
+
+  font-size: 90%;
+  color: $text;
+  cursor: pointer;
+}
