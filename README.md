@@ -46,4 +46,4 @@ yarn test
 
 Serão rodados os testes do jest e do cypress
 
-Obs: Por questões de ser um teste, acabei deixando o .env fora do .gitignore
+Obs: Por questões de ser um teste interno, acabei deixando o .env fora do .gitignore
