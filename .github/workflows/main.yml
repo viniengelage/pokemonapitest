@@ -17,8 +17,8 @@ jobs:
         with:
           node-version: 16
 
-      - name: Executar npm install
-        run: npm install
+      - name: Instalar dependencias
+        run: yarn install 
 
       - name: Instalar Cypress
         run: yarn add cypress@latest
@@ -33,3 +33,4 @@ jobs:
         with:
           # Vercel token
           vercel-token: 7CM0F9elSws7yeHkm3xlPPFy
+          project-path: ./
