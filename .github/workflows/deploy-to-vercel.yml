@@ -47,3 +47,4 @@ jobs:
           # Vercel token
           vercel-token: 7CM0F9elSws7yeHkm3xlPPFy
           project-path: ./
+          
