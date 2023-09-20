@@ -34,7 +34,7 @@ jobs:
         run: yarn add vercel -g
 
       - name: Deploy to Vercel
-        uses: amondnet/vercel-action@latest
+        uses: amondnet/vercel-action@19d4fbf5eb89beb6127a64278a7a835e1901f5b8
         with:
           vercel-token: 7CM0F9elSws7yeHkm3xlPPFy
 
