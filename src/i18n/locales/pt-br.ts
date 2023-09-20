@@ -6,7 +6,7 @@ export default {
         button: 'Buscar',
       },
       header: {
-        title: 'Pokemon Cards - Pipeline',
+        title: 'Pokemon Cards',
       },
       listCards: {
         notFound: 'Nenhuma carta encontrada',
