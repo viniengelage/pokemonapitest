@@ -25,17 +25,3 @@ jobs:
         
       - name: Executar Cypress
         run: yarn test
-        
-  deploy-to-vercel:
-    runs-on: ubuntu-latest
-    needs: install-and-tests
-    steps:
-      - name: Install Vercel CLI
-        run: yarn add vercel -g
-
-      - name: Deploy to Vercel
-        uses: amondnet/vercel-action@19d4fbf5eb89beb6127a64278a7a835e1901f5b8
-        with:
-          vercel-token: 7CM0F9elSws7yeHkm3xlPPFy
-
-          
