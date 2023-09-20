@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  install:
+  install-and-tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,19 +22,13 @@ jobs:
         
       - name: Instalar Cypress
         run: yarn add cypress@latest
-  test:
-    runs-on: ubuntu-latest
-    needs: [install]
-
-    steps:
-      - uses: actions/checkout@v2
-
+        
       - name: Executar Cypress
         run: yarn test
-
+        
   deploy:
     runs-on: ubuntu-latest
-    needs: [test]
+    needs: [install-and-tests]
 
     steps:
       - uses: actions/checkout@v2
